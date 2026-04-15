@@ -11,7 +11,7 @@ In standard Stochastic Gradient Descent (SGD), a new minibatch of samples is dra
 While counterintuitive, this "delay" allows us to temporarily treat the optimization problem as deterministic. This shift enables the application of highly efficient optimization methods, such as Nesterov acceleration, which are typically more difficult to tune in purely stochastic environments.
 
 ### Why does this work?
-Our method is inspired by time-varying optimization. By utilizing "stale" information strategically, we can achieve faster convergence. Our research provides the mathematical analysis to validate this viewpoint and demonstrates that this method consistently outperforms tuned SGD and Adam in training loss.
+The method is inspired by time-varying optimization. By utilizing "stale" information strategically, we can achieve faster convergence. Our research provides the mathematical analysis to validate this viewpoint and demonstrates that this method consistently outperforms tuned SGD and Adam in training loss.
 
 ---
 
@@ -24,7 +24,7 @@ The code is organized to mirror the sections of the paper:
 | `olnm.py` | The main optimizer in PyTorch. |
 | `numerical/` | Contains scripts demonstrating the core conceptual mechanics of the algorithm. |
 | `logistic-reg-mnist/` | Experiments using a simple model on the MNIST dataset comparing our solution against SGD and Adam. |
-| `cnn-fmnist/` | Deep learning implementation using a Convolutional Neural Network on Fashion-MNIST to validate performance in deep architectures. |
+| `cnn-fmnist/` | Deep learning implementation using a CNN on Fashion-MNIST to validate performance in deep architectures. |
 
 ---
 
@@ -32,9 +32,9 @@ The code is organized to mirror the sections of the paper:
 
 We evaluated the Delayed Mini-Batch Sampling method on multiple datasets:
 1.  MNIST: Using both squared and cross-entropy loss.
-2.  Fashion-MNIST: Validating the deep learning approach.
+2.  Fashion-MNIST: Validating the deep learning (CNN) approach.
 
-In all cases, the proposed method showed superior performance in terms of both minimizing training loss and maximizing testing accuracy compared to heavily tuned baseline optimizers.
+In all cases, the proposed method showed superior performance compared to tuned baseline optimizers.
 
 ![OLNM Performance using CNN on Fashion MNIST](cnn-fmnist/imgs/svg/figure-5a-fmnist.svg)
 
