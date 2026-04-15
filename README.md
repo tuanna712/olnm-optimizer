@@ -21,6 +21,7 @@ The code is organized to mirror the sections of the paper:
 
 | Directory | Description |
 | :--- | :--- |
+| `olnm.py` | The main optimizer in PyTorch. |
 | `numerical/` | Contains scripts demonstrating the core conceptual mechanics of the algorithm. |
 | `logistic-reg-mnist/` | Experiments using a simple model on the MNIST dataset comparing our solution against SGD and Adam. |
 | `cnn-fmnist/` | Deep learning implementation using a Convolutional Neural Network on Fashion-MNIST to validate performance in deep architectures. |
