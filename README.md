@@ -31,8 +31,7 @@ The code is organized to mirror the sections of the paper:
 
 We evaluated the Delayed Mini-Batch Sampling method on multiple datasets:
 1.  MNIST: Using both squared and cross-entropy loss.
-2.  CIFAR-10: Using a CNN architecture.
-3.  Fashion-MNIST: Validating the deep learning approach.
+2.  Fashion-MNIST: Validating the deep learning approach.
 
 In all cases, the proposed method showed superior performance in terms of both minimizing training loss and maximizing testing accuracy compared to heavily tuned baseline optimizers.
 
