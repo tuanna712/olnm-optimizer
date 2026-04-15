@@ -1,0 +1,68 @@
+{
+  "SGD": [
+    {
+      "lr": 0.01,
+      "best_test_acc": 59.92,
+      "final_test_acc": 48.28
+    },
+    {
+      "lr": 0.05,
+      "best_test_acc": 72.24,
+      "final_test_acc": 70.88
+    },
+    {
+      "lr": 0.1,
+      "best_test_acc": 75.4,
+      "final_test_acc": 75.4
+    },
+    {
+      "lr": 0.2,
+      "best_test_acc": 75.58,
+      "final_test_acc": 71.9
+    }
+  ],
+  "Adam": [
+    {
+      "lr": 0.0005,
+      "best_test_acc": 79.94,
+      "final_test_acc": 79.46
+    },
+    {
+      "lr": 0.001,
+      "best_test_acc": 83.56,
+      "final_test_acc": 80.34
+    },
+    {
+      "lr": 0.002,
+      "best_test_acc": 84.74,
+      "final_test_acc": 84.4
+    },
+    {
+      "lr": 0.005,
+      "best_test_acc": 86.14,
+      "final_test_acc": 86.08
+    }
+  ],
+  "OLNM": [
+    {
+      "lr": 0.01,
+      "best_test_acc": 73.24,
+      "final_test_acc": 73.24
+    },
+    {
+      "lr": 0.02,
+      "best_test_acc": 75.18,
+      "final_test_acc": 75.18
+    },
+    {
+      "lr": 0.03,
+      "best_test_acc": 75.32,
+      "final_test_acc": 75.32
+    },
+    {
+      "lr": 0.05,
+      "best_test_acc": 71.42,
+      "final_test_acc": 71.42
+    }
+  ]
+}
