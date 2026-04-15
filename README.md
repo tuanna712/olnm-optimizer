@@ -8,9 +8,6 @@ Official implementation of the paper **"Delayed Mini-Batch Sampling Method for A
 
 In standard Stochastic Gradient Descent (SGD), a new minibatch of samples is drawn at every single gradient step. This repository introduces a approach of re-using the same minibatch for several consecutive gradient steps.
 
-While counterintuitive, this "delay" allows us to temporarily treat the optimization problem as deterministic. This shift enables the application of highly efficient optimization methods, such as Nesterov acceleration, which are typically more difficult to tune in purely stochastic environments.
-
-### Why does this work?
 The method is inspired by time-varying optimization. By utilizing "stale" information strategically, we can achieve faster convergence. Our research provides the mathematical analysis to validate this viewpoint and demonstrates that this method consistently outperforms tuned SGD and Adam in training loss.
 
 ---
